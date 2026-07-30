@@ -477,7 +477,160 @@ System.out.println(a&b);
 ----
 0111
 
-result = 1
+result = 7
+
+3. Bitwise XOR (^)
+
+Same bits -> 0
+different bits -> 1
+
+a   b   output
+0   0   0
+0   1   1
+1   0   1
+1   1   0
+
+int a=5;
+int b=3;
+System.out.println(a^b);
+
+0101
+0011
+----
+0110
+
+result = 6
+
+4. Bitwise NOT (~)
+
+it works on only one number and reverses every bits
+
+0 -> 1
+1 -> 0
+
+int a=5;
+System.out.println(~a);
+
+Bitwise 32 bits work
+
+0000 0000 0000 0000 0000 0000 0000 0101
+
+1111 1111 1111 1111 1111 1111 1111 1010
+
+{-(a+1)}
+
+result = -6
+
+a=10
+
+0000 0000 0000 0000 0000 0000 0000 1010
+1111 1111 1111 1111 1111 1111 1111 0101
+
+result = -11
+
+
+5. left shift (<<)
+
+-> 1010
+-> 0101
+
+6. right shift (>>)
+
+-> 1101
+-> 1110
+
+
+Type Casting:
+
+Type casting is the process of converting one data type into
+another data type.
+
+java performs this conversion in two ways:
+
+1. Implicit  type casting
+2. Explicit type casting
+
+Example :
+
+int -> double 
+
+1. Implicit Type casting:
+
+java automatically converts a smaller data type into a larger 
+data type.
+
+possible:
+int age = 20;  
+double result = age; 20.0000000
+
+impossible:
+double age = 20.00;
+int result = age;
+
+
+byte -> short -> int -> long 
+                     -> float -> double
+
+2. Explicit Type casting:
+
+java converts a larger data type into a smaller data type
+only when the programmer explicitly specifies the 
+conversion.
+
+Example:
+
+double price = 99.99;
+int value = (int)price; 99
+
+
+double marks = 95.75;
+int result = (int)marks;
+
+
+-> User Input (Scanner):
+
+Scanner is a predefined java class used to read input from the
+keyboard.
+
+import java.util.Scanner;
+public class Sample{
+    public static void main(String args[]){
+        Scanner sc =  new Scanner(System.in);
+        int age = sc.nextInt();
+        double salary = sc.nextDouble();
+        float weight =  sc.nextFloat();
+        long mobile = sc.nextLong();
+        short year = sc.nextShort();
+        Byte number =  sc.nextByte();
+        Boolean value = sc.nextBoolean();
+        char grade = sc.next.charAt();
+        String name =  sc.next();
+        String fullName= sc.nextLine();
+    }
+}
+
+Ouput Methods:
+
+Output methods display information to the console(Screen)
+
+1. print():
+print text without moving to the next line.
+
+EX:
+System.out.print("Hello");
+
+2. println():
+print text and moves to the next line.
+
+Ex:
+System.out.println("Hello");
+
+3. printf()
+used for formatted output.
+
+Ex:
+String name = "Divakar";
+System.out.printf("Name : %s ",name);
 
 
 
