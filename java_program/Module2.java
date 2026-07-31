@@ -631,32 +631,11 @@ used for formatted output.
 Ex:
 String name = "Divakar";
 System.out.printf("Name : %s ",name);
+System.out.println("Name : "+ name);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+String - %s
+int - %d
+float - %f
 
 */
 
@@ -681,7 +660,7 @@ class Solution{
 }
 
 
-public class Sample{
+public class Module2{
     public static void   main(String agrs[]){
         Solution         sol =    new Solution();
         System . out . println ( sol . sum(12,5) );
