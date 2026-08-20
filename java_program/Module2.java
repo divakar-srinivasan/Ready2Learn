@@ -4,7 +4,11 @@ Token :
  A token is the smallest individual unit ( building block )
  of a java program that the java compiler can understand.
 
-int age = 20;
+int 
+    age
+         =                   20
+                                ;
+int mark = 30
 
 token 1 : int
 token 2 : age 
